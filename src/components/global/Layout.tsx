@@ -3,6 +3,7 @@ import MainPage from "../main-page/home-page";
 import Header from "./header";
 import ContactPage from "../contact-pages/contact-page"; 
 import { Route, Routes } from "react-router-dom"; // Импорт для маршрутизации
+import Footer from "./footer";
 
 const Layout: React.FC = () => {
     return (
@@ -14,6 +15,7 @@ const Layout: React.FC = () => {
                 {/* <Route path="/notFound" element={<NotFound />} /> */}
                 {/* <Route path="/basket" element={<BasketPage />} /> */}
             </Routes>
+            <Footer/>
         </div>
     );
 };

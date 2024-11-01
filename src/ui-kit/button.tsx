@@ -3,7 +3,7 @@ import { Button } from 'antd';
 
 interface ButtonProp {
     title: string;
-    onClick: () => void;
+    onClick?: (e:any) => void;
 }
 
 export const PrimaryButton: React.FC<ButtonProp> = ({ title, onClick }) => {
