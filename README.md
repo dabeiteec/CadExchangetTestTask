@@ -1,52 +1,34 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот шаблон предоставляет минимальную настройку для работы с React в Vite с горячей заменой модулей (HMR) и некоторыми правилами ESLint.
 
-Currently, two official plugins are available:
+## Установка
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Перед запуском проекта убедитесь, что у вас установлены все зависимости:
 
-## Expanding the ESLint configuration
+=========================TERMINAL=========================
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
-
-//Перед запуском подтянуть нод модули : npm i, если установлена нода.
+npm install
+=========================
+### Стили 
+Исходя из тех. задания были использованы: AntDesign и Styled Components, а так же их микс;
+Резиновая верстка и адаптивная верстка, частичная кросбраузерная верстка(смотрел в Google и Yandex);
+Сохранена структура макета из тех задания(компоненты находятся в тех же местах относительно друг друга, возможно, частично не сохранив пропорции);
+Добавлеы анимации всплытия при загрузке страницы(изменение прозрачности через опасити  и изменение позиции через трансформ),анимации при наведении на объект(псевдокласс ховер)
+При оценке прошу учесть, что я не дизайнер и старался придерживаться тех задания, а именно 'продемонстрируйте классную, необычную или ультрасовременную технику и опишите ее в
+README', как мне показалось речь шла об анимациях и т.п. 
+=========================
+### Сборка и хостинг
+Для сборки использовался vite, в качестве хоста github
+Для более комфортной сборки и деплоя добавил gh-pages
+Собран проект с минификацией 
+### Проверка перформанса 
+Проверял через Google и Yandex lighthouse 
+=========================
+Показатели сбилженой стартовой страницы десктоп: 
+Google: Performance-100, Accessibility-91, Best Practices-78, SEO-100 
+Yandex:Performance-100, Accessibility-91, Best Practices-96, SEO-100
+==========================
+Показатели сбилженой стартовой страницы мобилка: 
+Google: Performance-99, Accessibility-91, Best Practices-79, SEO-100 
+Yandex:Performance-99, Accessibility-91, Best Practices-96, SEO-100

@@ -59,6 +59,7 @@ const ContactForm: React.FC = () => {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 placeholder="Введите ваше имя"
+                                aria-label="Введите ваше имя"
                             />
                         </AnimatedFormItem>
                         <AnimatedFormItem
@@ -74,6 +75,7 @@ const ContactForm: React.FC = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Введите ваш email"
                                 type="email"
+                                aria-label="Введите ваше email"
                             />
                         </AnimatedFormItem>
                         <AnimatedFormItem
@@ -85,6 +87,7 @@ const ContactForm: React.FC = () => {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 placeholder="Введите ваше сообщение"
+                                aria-label="Введите ваше сообщение"
                             />
                         </AnimatedFormItem>
                         </CenterConeiner>
@@ -111,8 +114,11 @@ const ContactForm: React.FC = () => {
 export default ContactForm;
 const CenterConeiner = styled.section`
     width:100%;
-    padding:20px
-`
+    padding:2rem;
+    @media (max-width: 600px) {
+        padding: 1rem; 
+    }
+`;
 
 const AnimatedFormItem = styled(Form.Item)<{ index: number }>`
     width:100%;
@@ -121,7 +127,9 @@ const AnimatedFormItem = styled(Form.Item)<{ index: number }>`
     animation: popupAnimation forwards ease-in-out;
     animation-duration: 1s;
     animation-delay: ${(props) => props.index * 0.2}s; 
-
+    @media (max-width: 600px) {
+        animation-duration: 0.5s; 
+    }
     @keyframes popupAnimation {
         to {
             opacity: 1;
@@ -131,7 +139,10 @@ const AnimatedFormItem = styled(Form.Item)<{ index: number }>`
 `;
 
 const CustomFlex = styled(Flex)`
-    margin-bottom: 100px;
+    margin-top: 5rem;
+    @media (max-width: 600px) {
+        margin-top: 3rem;
+    }
 `;
 
 const ErrorMessage = styled.div`
@@ -140,7 +151,7 @@ const ErrorMessage = styled.div`
 
 const CenteredMessage = styled.h1`
     color: #333;
-    font-size: 18px;
+    font-size: 1.5rem; 
     text-align: center;
     background-color: white;
     padding: 20px;
@@ -149,7 +160,9 @@ const CenteredMessage = styled.h1`
     z-index: 10;
     transform: translateY(100px);
     animation: messageFly 2s forwards;
-
+    @media (max-width: 600px) {
+        font-size: 1.2rem; 
+    }
     @keyframes messageFly {
         to {
             opacity: 1;

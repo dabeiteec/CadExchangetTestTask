@@ -1,5 +1,4 @@
-
-import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter  } from 'react-router-dom'; 
 import Layout from './components/global/Layout';
 import GlobalStyles from './components/global/global-stylex';
 
@@ -7,7 +6,7 @@ import GlobalStyles from './components/global/global-stylex';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CadExchangetTestTask">
         <GlobalStyles/>
         <Layout />
     </BrowserRouter>

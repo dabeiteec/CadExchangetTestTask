@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Flex } from "antd";
+import YouTube from "react-youtube";
 
 const Subtitle: React.FC = () => {
+    const videoOptions = {
+        height: '315',
+        width: '560',
+        playerVars: {
+            autoplay: 0, 
+        },
+    };
     return (
         <StyledFlex justify="space-evenly" align="center" gap={20}>
             <FlexColumn vertical align="center">
@@ -12,13 +20,7 @@ const Subtitle: React.FC = () => {
                 </Description>
             </FlexColumn>
             <VideoWrapper>  
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    title="Demo video">
-                </iframe>
+                <YouTube videoId="dQw4w9WgXcQ" opts={videoOptions} />
             </VideoWrapper>
         </StyledFlex>
     );
@@ -28,7 +30,7 @@ export default Subtitle;
 
 const StyledFlex = styled(Flex)`
     padding: 20px;
-    @media (max-width:450px) {
+    @media (max-width:1000px) {
         flex-direction:column;
     }
 `;
@@ -68,8 +70,6 @@ const Description = styled.small`
 `;
 
 const VideoWrapper = styled.div`
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
     transform: translateX(20px);
