@@ -1,7 +1,7 @@
 import React from "react";
 import Subtitle from "./main-components/subtitle";
 import MainConteiner from "./main-components/main";
-import SubFooter from "./main-components/idn";
+import SubFooter from "./main-components/subfooter";
 
 const MainPage: React.FC=()=>{
     return(

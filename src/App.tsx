@@ -1,6 +1,6 @@
 import { BrowserRouter  } from 'react-router-dom'; 
-import Layout from './components/global/Layout';
-import GlobalStyles from './components/global/global-stylex';
+import Layout from './components/global/layout';
+import GlobalStyles from './components/global/global-styles';
 
 
 function App() {
