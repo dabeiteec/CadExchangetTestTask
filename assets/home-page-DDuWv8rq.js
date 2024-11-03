@@ -1,4 +1,4 @@
-import { ao as dt, ap as jsxRuntimeExports, aq as Flex, ar as useNavigate, as as DefaultButton } from "./index-kWQnk0Oc.js";
+import { ao as dt, ap as jsxRuntimeExports, aq as Flex, ar as useNavigate, as as DefaultButton } from "./index-CAhXaqTw.js";
 const Subtitle = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(StyledFlex, { justify: "space-evenly", align: "center", gap: 20, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(FlexColumn, { vertical: true, align: "center", children: [

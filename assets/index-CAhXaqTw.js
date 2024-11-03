@@ -8240,7 +8240,7 @@ var DataRouterStateHook;
 })(DataRouterStateHook || (DataRouterStateHook = {}));
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
-  return "https://dabeiteec.github.io/CadExchangetTestTask/" + dep;
+  return "/CadExchangetTestTask/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
@@ -20856,8 +20856,8 @@ const StyledFooter = dt.footer`
     background-color: white;
     box-sizing: border-box;
 `;
-const ContactPage = React.lazy(() => __vitePreload(() => import("./contact-page-4LWdiJrJ.js").then((n2) => n2.I), true ? [] : void 0));
-const MainPage = React.lazy(() => __vitePreload(() => import("./home-page-CXa4VACU.js"), true ? [] : void 0));
+const ContactPage = React.lazy(() => __vitePreload(() => import("./contact-page-DB9RgFP4.js").then((n2) => n2.I), true ? [] : void 0));
+const MainPage = React.lazy(() => __vitePreload(() => import("./home-page-DDuWv8rq.js"), true ? [] : void 0));
 const Layout = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(PageContainer, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
