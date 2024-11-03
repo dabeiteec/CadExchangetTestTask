@@ -1,4 +1,4 @@
-import{ao as s,ap as a}from"./index-CB-3faB2.js";const d=s.input`
+import{ao as s,ap as a}from"./index-DYmSg1OS.js";const d=s.input`
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
