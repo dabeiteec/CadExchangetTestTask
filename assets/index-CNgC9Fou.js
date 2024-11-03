@@ -8240,7 +8240,7 @@ var DataRouterStateHook;
 })(DataRouterStateHook || (DataRouterStateHook = {}));
 const scriptRel = "modulepreload";
 const assetsURL = function(dep) {
-  return "/CadExchangetTestTask/" + dep;
+  return "https://dabeiteec.github.io/CadExchangetTestTask/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
@@ -20825,7 +20825,7 @@ const Header = () => {
     navigate("/contact");
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(HeaderContainer, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Flex, { align: "center", justify: "space-evenly", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { className: "Logo", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "My Company" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Logo, { className: "Logo", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { children: "sex" }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(PrimaryButton, { title: "Contact us", onClick: handleClick }) })
   ] }) });
 };
@@ -20856,8 +20856,8 @@ const StyledFooter = dt.footer`
     background-color: white;
     box-sizing: border-box;
 `;
-const ContactPage = React.lazy(() => __vitePreload(() => import("./contact-page-DB9RgFP4.js").then((n2) => n2.I), true ? [] : void 0));
-const MainPage = React.lazy(() => __vitePreload(() => import("./home-page-DDuWv8rq.js"), true ? [] : void 0));
+const ContactPage = React.lazy(() => __vitePreload(() => import("./contact-page-DLyI7KG-.js").then((n2) => n2.I), true ? [] : void 0));
+const MainPage = React.lazy(() => __vitePreload(() => import("./home-page-CG9UudzV.js"), true ? [] : void 0));
 const Layout = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(PageContainer, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
