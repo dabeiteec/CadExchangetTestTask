@@ -32,3 +32,4 @@ Yandex:Performance-100, Accessibility-91, Best Practices-96, SEO-100
 Показатели сбилженой стартовой страницы мобилка: 
 Google: Performance-99, Accessibility-91, Best Practices-79, SEO-100 
 Yandex:Performance-99, Accessibility-91, Best Practices-96, SEO-100
+
